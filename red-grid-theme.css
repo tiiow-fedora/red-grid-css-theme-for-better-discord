@@ -1,0 +1,185 @@
+/* ============================================================
+   ADDON — TRANSPARENT CHAT + NEON RED GRID BACKGROUND
+   Uses actual class names from your Discord instance
+   ============================================================ */
+
+/* ── NEON GRID ON THE ACTUAL APP ROOT ──────────────────────── */
+.appMount__51fd7,
+#app-mount {
+  background-color: #000000 !important;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent calc(4.16% - 0.5px),
+      rgba(180, 0, 0, 0.22) calc(4.16% - 0.5px),
+      rgba(180, 0, 0, 0.22) 4.16%
+    ),
+    repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent calc(5.55% - 0.5px),
+      rgba(150, 0, 0, 0.18) calc(5.55% - 0.5px),
+      rgba(150, 0, 0, 0.18) 5.55%
+    ),
+    radial-gradient(
+      ellipse 90% 70% at 50% 85%,
+      rgba(160, 0, 0, 0.3) 0%,
+      rgba(80, 0, 0, 0.15) 40%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 60% 30% at 50% 0%,
+      rgba(110, 0, 0, 0.18) 0%,
+      transparent 60%
+    ) !important;
+  animation: grid-pulse 6s ease-in-out infinite !important;
+}
+
+@keyframes grid-pulse {
+  0%, 100% {
+    background-image:
+      repeating-linear-gradient(90deg, transparent, transparent calc(4.16% - 0.5px), rgba(180,0,0,0.22) calc(4.16% - 0.5px), rgba(180,0,0,0.22) 4.16%),
+      repeating-linear-gradient(180deg, transparent, transparent calc(5.55% - 0.5px), rgba(150,0,0,0.18) calc(5.55% - 0.5px), rgba(150,0,0,0.18) 5.55%),
+      radial-gradient(ellipse 90% 70% at 50% 85%, rgba(160,0,0,0.3) 0%, rgba(80,0,0,0.15) 40%, transparent 70%),
+      radial-gradient(ellipse 60% 30% at 50% 0%, rgba(110,0,0,0.18) 0%, transparent 60%);
+  }
+  50% {
+    background-image:
+      repeating-linear-gradient(90deg, transparent, transparent calc(4.16% - 0.5px), rgba(220,0,0,0.38) calc(4.16% - 0.5px), rgba(220,0,0,0.38) 4.16%),
+      repeating-linear-gradient(180deg, transparent, transparent calc(5.55% - 0.5px), rgba(190,0,0,0.3) calc(5.55% - 0.5px), rgba(190,0,0,0.3) 5.55%),
+      radial-gradient(ellipse 100% 80% at 50% 90%, rgba(200,0,0,0.4) 0%, rgba(100,0,0,0.2) 40%, transparent 70%),
+      radial-gradient(ellipse 70% 35% at 50% 0%, rgba(140,0,0,0.25) 0%, transparent 60%);
+  }
+}
+
+/* ── MAKE ALL LAYOUT LAYERS TRANSPARENT ─────────────────────── */
+.app_a3002d,
+.notAppAsidePanel_a3002d,
+.appAsidePanelWrapper_a3002d,
+.app__160d8,
+.bg__960e4,
+.layers__960e4,
+.layers__160d8,
+.layer__960e4,
+.baseLayer__960e4,
+.container__5e434,
+.base__5e434,
+.content__5e434,
+.page__5e434 {
+  background: transparent !important;
+}
+
+/* ── CHAT AREA — FULLY TRANSPARENT ─────────────────────────── */
+.chat_f75fb0,
+.uploadArea_f75fb0,
+.subtitleContainer_f75fb0,
+.content_f75fb0,
+.chatContent_f75fb0,
+.messagesWrapper__36d07,
+.scroller__36d07,
+.scrollerContent__36d07 {
+  background: transparent !important;
+}
+
+/* Individual messages */
+.messageListItem__5126c,
+.message__5126c,
+.wrapper_c19a55,
+.groupStart__5126c,
+.cozy_c19a55,
+.compact_c19a55 {
+  background: transparent !important;
+}
+
+.message__5126c:hover,
+.wrapper_c19a55:hover {
+  background: rgba(150, 0, 0, 0.08) !important;
+}
+
+/* ── TOP CHANNEL HEADER ─────────────────────────────────────── */
+.title_f75fb0,
+.container__9293f,
+.themed__9293f,
+.bar_c38106 {
+  background: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border-bottom: 1px solid rgba(120, 0, 0, 0.4) !important;
+}
+
+/* ── CHANNEL SIDEBAR ────────────────────────────────────────── */
+.sidebar__5e434,
+.sidebarList__5e434,
+.container__2637a,
+.scroller__629e4 {
+  background: rgba(0, 0, 0, 0.65) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+}
+
+/* ── SERVER BAR ─────────────────────────────────────────────── */
+.wrapper_ef3116,
+.guilds__5e434 {
+  background: linear-gradient(
+    to bottom,
+    rgba(70, 0, 0, 0.85) 0%,
+    rgba(25, 0, 0, 0.8) 40%,
+    rgba(0, 0, 0, 0.85) 100%
+  ) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+/* ── MESSAGE INPUT BOX ──────────────────────────────────────── */
+.channelTextArea_f75fb0,
+.channelTextArea__74017,
+.scrollableContainer__74017,
+.themedBackground__74017,
+.form_f75fb0 {
+  background: rgba(0, 0, 0, 0.55) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border-top: 1px solid rgba(80, 0, 0, 0.4) !important;
+}
+
+.channelTextArea__74017:focus-within,
+.scrollableContainer__74017:focus-within {
+  border-color: rgba(200, 0, 0, 0.9) !important;
+  box-shadow: 0 0 16px rgba(180, 0, 0, 0.3) !important;
+}
+
+/* ── BOTTOM PANELS (user area) ──────────────────────────────── */
+.panels__5e434,
+.container__37e49 {
+  background: rgba(0, 0, 0, 0.7) !important;
+  backdrop-filter: blur(8px) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  border-top: 1px solid rgba(80, 0, 0, 0.4) !important;
+}
+
+/* ── MEMBER LIST ────────────────────────────────────────────── */
+[class*="membersWrap"],
+[class*="members-"],
+[class*="membersList"] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+}
+
+/* ── POPOUTS & MODALS ───────────────────────────────────────── */
+[class*="popout-"],
+[class*="popup-"] {
+  background: rgba(5, 0, 0, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(100, 0, 0, 0.5) !important;
+  box-shadow: 0 8px 32px rgba(180, 0, 0, 0.3) !important;
+}
+
+[class*="modal-"],
+[class*="layerContainer-"] [class*="root-"] {
+  background: rgba(3, 0, 0, 0.93) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+}
