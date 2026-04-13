@@ -1,5 +1,7 @@
 # Vesktop QuickCSS — Neon Red Transparent Theme
 
+![Preview](preview.png)
+
 A minimal QuickCSS theme for Vesktop that adds a transparent Discord layout with a neon red grid background and soft glass-style UI panels.
 
 ---
